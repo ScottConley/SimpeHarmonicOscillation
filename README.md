@@ -8,9 +8,14 @@ Starting from F = −kx
 
 Result: ½mv² + ½kx² = E (constant)
 
-For simulation, we use Velocity Verlet integration:
+For simulation, we will use Velocity Verlet integration:
 1. x(t+dt) = x(t) + v(t)·dt + ½a(t)·dt²
 2. a(t+dt) = −k·x(t+dt)/m
 3. v(t+dt) = v(t) + ½[a(t) + a(t+dt)]·dt
+
+However, at this time it is simpler to model using Euler's method
+1. a = -(k/m) * x
+2. v_new = v_old + a*dt
+3. x_new = x_old + v_new*dt
 
 Energy conservation (flat E plot) validates the integrator.

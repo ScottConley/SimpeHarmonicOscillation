@@ -73,6 +73,9 @@ for i in range(n_steps - 1):
     v_array[i+1] = v_array[i] + a * dt # v_new = v_old + a * dt
     x_array[i+1] = x_array[i] + v_array[i+1] * dt #x_new uses the updated velocity
 
+#TODO: add verification method
+#TODO: upgrade to velocity verlet oscillation mathematical model for animation upgrade
+
 #plots
 
 #These are simply nice colors that I like which are easy on the eyes
